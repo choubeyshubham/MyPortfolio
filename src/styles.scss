@@ -1,0 +1,85 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+$black-color: black;
+$whitesmoke-color: whitesmoke;
+$border-color: rgb(53, 53, 53);
+$darkgrey-color: rgb(85, 85, 85);
+$hover-background: rgb(53, 53, 53);
+$decoration-color: rgb(181,181, 181);
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F8F7F2 linear-gradient(to right, #FFFFFF, #FFFAF0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p, li, .subtitle {
+  color: rgb(85,85,85);
+}
+
+section {
+  padding-top: 10rem;
+  max-width: 2000px;
+}
+
+.container-card {
+  width: 100%;
+
+  @media (min-width: 750px) {
+    width: 700px;
+  }
+}
+
+.icon {
+  color: $black-color;
+}
+
+i.pointer {
+  cursor: pointer;
+}
+
+/* Buttons */
+.bt {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.8rem;
+  width: 10rem;
+  border-radius: 2rem;
+  border: $border-color 0.1rem solid;
+
+  &:hover {
+    cursor: pointer;
+    color: $whitesmoke-color;
+  }
+}
+
+.btn-color-1 {
+  &:hover {
+    background: $black-color;
+  }
+}
+
+.btn-color-2 {
+  background: none;
+
+  &:hover {
+    background: $hover-background;
+    border-color: $whitesmoke-color;
+  }
+}
+
+.btn-color-3 {
+  background: $black-color;
+  color: whitesmoke;
+
+  &:hover {
+    background: $hover-background;
+    border-color: $whitesmoke-color;
+  }
+}
