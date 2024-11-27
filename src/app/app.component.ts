@@ -14,7 +14,6 @@ import {FooterComponent} from "./components/footer/footer.component";
   imports: [RouterOutlet, HeaderComponent, ProfileComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html'
 })
-
 export class AppComponent {
-  title = 'MyProtfolio';
+  title = 'Portfolio';
 }
