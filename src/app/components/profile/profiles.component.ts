@@ -1,11 +1,30 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
-  selector: 'app-profiles',
+  selector: 'app-profile',
+  standalone: true,
   imports: [],
-  templateUrl: './profiles.component.html',
-  styleUrl: './profiles.component.scss'
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.scss'
 })
-export class ProfilesComponent {
+export class ProfileComponent {
 
+  constructor(private viewportScroller: ViewportScroller) {}
+
+  scrollTo(section: string) {
+    this.viewportScroller.scrollToAnchor(section);
+  }
+
+  openResume() {
+    window.open("./assets/SebastianoFazzino.pdf");
+  }
+
+  goToLinkedin() {
+    window.open('https://www.linkedin.com/in/sebastiano-fazzino-895862176/', '_blank');
+  }
+
+  goToGithub() {
+    window.open('https://github.com/SebastianoFazzino', '_blank');
+  }
 }

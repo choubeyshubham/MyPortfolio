@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {NavLinksComponent} from "../shared/nav-links/nav-links.component";
 
 @Component({
   selector: 'app-footer',
-  imports: [],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  standalone: true,
+  imports: [
+    NavLinksComponent
+  ],
+  templateUrl: './footer.component.html'
 })
 export class FooterComponent {
 
+  getCurrentYear() {
+    const date = new Date();
+    return date.getFullYear();
+  }
 }
