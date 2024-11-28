@@ -1,1 +1,22 @@
-<p>contact works!</p>
+<section id="contacts" class="mx-auto">
+  <p class="fs-5 text-center">Get in Touch</p>
+  <h1 class="fw-bold text-center mb-5">Contact Me</h1>
+  <div class="row">
+    <div class="col-10 col-md-6 col-xl-4 mx-auto">
+      <div class="card m-2 rounded-5 border-black contact-card">
+        <div class="row py-4">
+          <div class="col-6 text-center">
+            <a href="{{'mailto:' + email}}" class="d-flex align-items-center justify-content-center">
+              <i class="fa fa-envelope fa-2x icon"></i>&nbsp;Email
+            </a>
+          </div>
+          <div class="col-6 text-center">
+            <a (click)="goToLinkedin()" class="d-flex align-items-center justify-content-center">
+              <i class="fab fa-linkedin fa-2x icon"></i>&nbsp;Linkedin
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

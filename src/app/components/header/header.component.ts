@@ -3,11 +3,11 @@ import {NavLinksComponent} from "../shared/nav-links/nav-links.component";
 
 @Component({
   selector: 'app-header',
-  standalone: true,
   imports: [
     NavLinksComponent
   ],
   templateUrl: './header.component.html',
+  standalone: true,
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {

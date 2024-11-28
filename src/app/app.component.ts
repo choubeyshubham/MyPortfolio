@@ -9,9 +9,9 @@ import {ContactComponent} from "./components/contact/contact.component";
 import {FooterComponent} from "./components/footer/footer.component";
 
 @Component({
+  imports: [RouterOutlet, HeaderComponent, ProfileComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, FooterComponent],
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ProfileComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html'
 })
 export class AppComponent {

@@ -1,0 +1,77 @@
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  z-index: 1;
+}
+
+.carousel-control-prev {
+  left: -5%;
+}
+
+.carousel-control-next {
+  right: -5%;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+// project item
+.card {
+  margin: 1rem 0;
+  height: 600px;
+  position: relative;
+
+  @media (max-width: 1100px) {
+    height: 650px;
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 270px;
+  object-fit: cover;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+}
+
+.technologies-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.technologies-list li {
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+
+  @media (max-width: 1100px) {
+    font-size: 0.8rem;
+  }
+}
+
+.bt {
+  margin-top: 1.2rem !important;
+  width: 15rem !important; // Override the default width of the button
+}
