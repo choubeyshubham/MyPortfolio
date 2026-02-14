@@ -9,10 +9,10 @@ import {Component} from '@angular/core';
 export class ContactComponent {
 
   goToLinkedin() {
-    window.open('https://www.linkedin.com/in/shubham-choubey/', '_blank');
+    window.open('https://www.linkedin.com/in/choubeyshubham/', '_blank');
   }
 //sebastiano-fazzino
   get email(): string {
-    return 'shubhamchoubey96@gmail.com';
+    return 'shubhamchoubeymv@gmail.com';
   }
 }
